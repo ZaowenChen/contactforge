@@ -1,0 +1,248 @@
+{
+  "run_id": "20261022_170440_B_005mm_seed17_from_A100_1000updates",
+  "training_completed": "2026-10-22",
+  "report_date": "2026-10-23",
+  "source_repository": "https://github.com/ZaowenChen/mjlab-peg-hole-search",
+  "source_commit": "830fc40f1588902658d0343b1e69da22561b4173",
+  "checkpoint_sha256": "9f5790688e8d208d93a4d165ae4989af6571c3495b082ef85839a83ec87d461b",
+  "initialization_checkpoint_sha256": "da6fbe90ca77414520b363f9f6d2c145a50f7aa77dc22f18ae1bca7a6174100b",
+  "evaluation": {
+    "successes": 5802,
+    "total": 6144,
+    "success_rate": 0.9443359375,
+    "by_shape": {
+      "circle": {
+        "total": 2048,
+        "successes": 2022,
+        "success_rate": 0.9873046875,
+        "wilson_95": [
+          0.9814628493980935,
+          0.9913217944067694
+        ],
+        "geometrically_illegal_successes": 0,
+        "depth_at_end_m_quantiles": {
+          "min": -0.002324111061170697,
+          "p05": 0.03900152370333672,
+          "p50": 0.039016906172037125,
+          "p95": 0.039033991284668446,
+          "p99": 0.03903868116438389,
+          "max": 0.11230999231338501
+        },
+        "episode_max_depth_m_quantiles": {
+          "min": -0.002289307303726673,
+          "p05": 0.03900152370333672,
+          "p50": 0.039016906172037125,
+          "p95": 0.039033991284668446,
+          "p99": 0.03903868116438389,
+          "max": 0.11230999231338501
+        },
+        "episode_peak_force_n_quantiles": {
+          "min": 3.7246851921081543,
+          "p05": 9.104375648498536,
+          "p50": 14.895313262939453,
+          "p95": 20.06815128326416,
+          "p99": 22.170149765014646,
+          "max": 635.7894287109375
+        },
+        "failure_reasons": {
+          "timeout_without_capture": 10,
+          "moment_limit": 6,
+          "timeout_after_capture": 6,
+          "force_limit": 2,
+          "force_and_moment_limit": 2
+        },
+        "strict_geometry_tolerance_m": 5e-06,
+        "strict_geometry_successes": 1994,
+        "strict_geometry_success_rate": 0.9736328125,
+        "strict_geometry_scope": "supplementary terminal shaft tolerance; chamfer-consistent seat",
+        "force_role": "1 kHz unfiltered force/moment peaks gate success and latch load faults",
+        "geometry_successes": 2022,
+        "force_qualified_successes": 2022,
+        "episode_peak_moment_nm_quantiles": {
+          "min": 0.1378629207611084,
+          "p05": 0.21692038774490358,
+          "p50": 0.36414870619773865,
+          "p95": 1.0631281256675718,
+          "p99": 1.6215460216999038,
+          "max": 39.66832733154297
+        },
+        "force_exceed_s_total": 0.004000000189989805,
+        "moment_exceed_s_total": 0.00800000037997961
+      },
+      "square": {
+        "total": 2048,
+        "successes": 1866,
+        "success_rate": 0.9111328125,
+        "wilson_95": [
+          0.8980265379062967,
+          0.9226995844220546
+        ],
+        "geometrically_illegal_successes": 0,
+        "depth_at_end_m_quantiles": {
+          "min": -0.0036690295673906803,
+          "p05": 0.00351690644165501,
+          "p50": 0.03901525400578976,
+          "p95": 0.039033211208879946,
+          "p99": 0.0390378101542592,
+          "max": 0.07495352625846863
+        },
+        "episode_max_depth_m_quantiles": {
+          "min": -0.0016652506310492754,
+          "p05": 0.00351690644165501,
+          "p50": 0.03901525400578976,
+          "p95": 0.039033211208879946,
+          "p99": 0.0390378101542592,
+          "max": 0.07495352625846863
+        },
+        "episode_peak_force_n_quantiles": {
+          "min": 6.772493362426758,
+          "p05": 9.00736379623413,
+          "p50": 14.07262897491455,
+          "p95": 19.819335460662842,
+          "p99": 25.556679763793934,
+          "max": 312.0203552246094
+        },
+        "failure_reasons": {
+          "moment_limit": 164,
+          "timeout_without_capture": 7,
+          "force_limit": 1,
+          "timeout_after_capture": 7,
+          "force_and_moment_limit": 3
+        },
+        "strict_geometry_tolerance_m": 5e-06,
+        "strict_geometry_successes": 1823,
+        "strict_geometry_success_rate": 0.89013671875,
+        "strict_geometry_scope": "supplementary terminal shaft tolerance; chamfer-consistent seat",
+        "force_role": "1 kHz unfiltered force/moment peaks gate success and latch load faults",
+        "geometry_successes": 1866,
+        "force_qualified_successes": 1866,
+        "episode_peak_moment_nm_quantiles": {
+          "min": 0.21857279539108276,
+          "p05": 0.34448219537734986,
+          "p50": 0.7531534731388092,
+          "p95": 2.1468181133270248,
+          "p99": 3.216254799365996,
+          "max": 29.81178092956543
+        },
+        "force_exceed_s_total": 0.004000000189989805,
+        "moment_exceed_s_total": 0.16700000793207437
+      },
+      "hexagon": {
+        "total": 2048,
+        "successes": 1914,
+        "success_rate": 0.9345703125,
+        "wilson_95": [
+          0.9230259424617506,
+          0.9444874172439888
+        ],
+        "geometrically_illegal_successes": 0,
+        "depth_at_end_m_quantiles": {
+          "min": -0.0012194275623187423,
+          "p05": 0.007840546150691808,
+          "p50": 0.03901490196585655,
+          "p95": 0.03903399538248777,
+          "p99": 0.03904160216450691,
+          "max": 0.12132303416728973
+        },
+        "episode_max_depth_m_quantiles": {
+          "min": -0.0012194275623187423,
+          "p05": 0.007840546150691808,
+          "p50": 0.03901490196585655,
+          "p95": 0.03903399538248777,
+          "p99": 0.03904160216450691,
+          "max": 0.12132303416728973
+        },
+        "episode_peak_force_n_quantiles": {
+          "min": 4.843056678771973,
+          "p05": 9.782008695602418,
+          "p50": 15.125335216522217,
+          "p95": 20.940828895568846,
+          "p99": 35.015913696289054,
+          "max": 622.3087158203125
+        },
+        "failure_reasons": {
+          "moment_limit": 107,
+          "timeout_after_capture": 9,
+          "timeout_without_capture": 8,
+          "force_and_moment_limit": 10
+        },
+        "strict_geometry_tolerance_m": 5e-06,
+        "strict_geometry_successes": 1881,
+        "strict_geometry_success_rate": 0.91845703125,
+        "strict_geometry_scope": "supplementary terminal shaft tolerance; chamfer-consistent seat",
+        "force_role": "1 kHz unfiltered force/moment peaks gate success and latch load faults",
+        "geometry_successes": 1914,
+        "force_qualified_successes": 1914,
+        "episode_peak_moment_nm_quantiles": {
+          "min": 0.19509583711624146,
+          "p05": 0.2592152267694473,
+          "p50": 0.6029019355773926,
+          "p95": 2.0326499462127683,
+          "p99": 2.729085185527801,
+          "max": 44.258216857910156
+        },
+        "force_exceed_s_total": 0.010000000474974513,
+        "moment_exceed_s_total": 0.1170000055572018
+      }
+    },
+    "failure_reasons": {
+      "timeout_without_capture": 25,
+      "moment_limit": 277,
+      "timeout_after_capture": 22,
+      "force_limit": 3,
+      "force_and_moment_limit": 15
+    },
+    "terminal_protocol": "first 1 ms event; load violation wins over geometric seat; no post-seat hold",
+    "strict_geometry_success_rate": 0.9274088541666666
+  },
+  "source_files": {
+    "src/mjlab_contact_prep/blind_contact/polygon_environment.py": "0aa347f045568d9599107b531165fef264e51aebf8a3c2aebf85ffcb4806494b",
+    "src/mjlab_contact_prep/blind_contact/environment.py": "efe84b2cb4bb4af47c4135c040bc725ffd5b8f13ee8529f027d70a845cf8d0e7",
+    "src/mjlab_contact_prep/blind_contact/validation.py": "49f1c606a88652989eca427391470e5789a75931dfa6bc0b970bbdf5854ca41f",
+    "src/mjlab_contact_prep/blind_contact/cartesian_validation.py": "7651101d3ba6341c950521deb671eaf1d1c9cc9976af764fb8f062eff580f649",
+    "src/mjlab_contact_prep/blind_contact/cartesian_control.py": "958a07d1cb3c8a8b83e72f65f3363ed66cbdb6d60d79772591c906abfa207f8a",
+    "src/mjlab_contact_prep/blind_contact/cartesian_networks.py": "903b8533fefbb7549731b701a0f97df70d62244cf010ebd68bb7709b1e36183b",
+    "src/mjlab_contact_prep/blind_contact/config.py": "5fa47651653bc019d01a1bbb0a08d27dd3a42c85b4181bfcca30a7ea8e2ab2ae",
+    "src/mjlab_contact_prep/blind_contact/polygon_geometry.py": "822207fcbfe3a58932b76ddf4203f3956b0678029cbb1e71493553c5abfd53f9",
+    "src/mjlab_contact_prep/blind_contact/cartesian_environment.py": "a0c95b668334fca5cdf83a3717cbc79820e19437603b21881e3b56c8339bc04e",
+    "src/mjlab_contact_prep/blind_contact/networks.py": "659b5eda34f12823bdfaeac93bba636b9bde721ddc0a7d1679c6c9231896cb40",
+    "src/mjlab_contact_prep/blind_contact/__init__.py": "e93c39843a0b86b463690000ad9103bb66ee94c8bc8bd05f3ab8d96c1d551f4d",
+    "src/mjlab_contact_prep/blind_contact/seating.py": "21087201481de171bb8a3355d16666b6ded5d6947e5d3d2df37ef65c9533a021",
+    "src/mjlab_contact_prep/blind_contact/wrench_sensor.py": "ec1080db32d9f9c7e7c4c74bd12a41e137433cf6b8d5bbe372a488140be5ab9c",
+    "src/mjlab_contact_prep/blind_contact/clearance_validation.py": "b2ef85f98f57ec4de2c3ef1c2ad33586fef4cab6b5ef34ea98d29f74be3bdbce",
+    "src/mjlab_contact_prep/blind_contact/seating_ablation.py": "f5d0e54e73341adfa0719bf0cfd959572567bd9108881a972a8d194bc4478c87",
+    "src/mjlab_contact_prep/blind_contact/study_environment.py": "5d8dc8c6b7f07c28b732c7da2cd965f3943c852e1eaa47b583a3529cb3dd244b",
+    "src/mjlab_contact_prep/blind_contact/assets.py": "eeb5e6a0679238ebfffc8b9bd02e5619a266460828fbf9f3e200bcda81935fd7",
+    "src/mjlab_contact_prep/blind_contact/passive_assets.py": "5bd415125d26789bdcf05b86870d8f2b8565da6457960df569aebc6335a6c5e2",
+    "src/mjlab_contact_prep/blind_contact/training.py": "a1a516e71c6df9fe8245148b08b36d9011a40c407c3ac5c72294d2d41d3df14e",
+    "src/mjlab_contact_prep/blind_contact/control.py": "372ecd684497625035c9c0d9b3cfc76d1cf50c4358db6bab7c6e9040ef327bb4"
+  },
+  "protocol": {
+    "horizon_s": 8,
+    "physics_dt_s": 0.001,
+    "seat_depth_m": 0.04,
+    "seat_tolerance_m": 0.001,
+    "main_shaft_tolerance_m": 2.5e-05,
+    "supplementary_shaft_tolerance_m": 5e-06,
+    "force_limit_n": 50,
+    "moment_limit_nm": 2,
+    "post_seat_hold_s": 0,
+    "success_velocity_gate": false
+  },
+  "training": {
+    "initialization": "A100, weights and normalizers, fresh optimizer",
+    "B_updates": 1000,
+    "B_seed": 17,
+    "num_envs": 12288,
+    "rollout_steps": 32,
+    "learning_rate": 0.0001,
+    "epa_horizon_overflow_warnings": 22
+  },
+  "limitations": [
+    "single training seed",
+    "first legal seat, no post-seat hold",
+    "evaluation reported no EPA overflow; training reported 22 warnings",
+    "trained checkpoints, raw logs and trajectories are not shipped"
+  ],
+  "packaging_note": "Runtime files match B1000 frozen source bytes. Restore the original trailing blank line in seating.py (AST unchanged) so A100/B1000 implementation fingerprints match. Absolute local paths omitted."
+}

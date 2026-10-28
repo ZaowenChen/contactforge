@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "contactforge"
+version = "0.6.0"
+description = "Contact-aware robotic assembly with Cartesian control and force/torque history"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = [
+  "mjlab==1.3.0",
+  "mujoco==3.7.0",
+  "mujoco-warp==3.7.0.1",
+  "warp-lang==1.12.0",
+  "scipy==1.15.3",
+  "rsl-rl-lib==5.0.1",
+  "tensordict==0.14.0",
+  "numpy==2.2.6",
+  "torch==2.14.0",
+  "tensorboard==2.21.0",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Homepage = "https://github.com/ZaowenChen/contactforge"
+Issues = "https://github.com/ZaowenChen/contactforge/issues"
+Repository = "https://github.com/ZaowenChen/contactforge.git"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mjlab_contact_prep = ["_vendor/*.json", "_vendor/LICENSE", "_vendor/README.md"]

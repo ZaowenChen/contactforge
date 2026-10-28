@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+.pytest_cache/
+.local/
+.env
+.env.*
+!.env.example
+
+# Experiment products stay local. Never force-add frozen runs or checkpoints.
+evaluation/
+runs/
+outputs/
+checkpoints/
+tensorboard/
+figures/
+*.pt
+*.pth
+*.ckpt
+*.mjb
+*.npz
+*.npy
+*.log
+events.out.tfevents.*
+MUJOCO_LOG.TXT
+reference/*.tar.gz
+
+# Historical and one-off tools belong in the original research repository.
+archive/
+docs/history/

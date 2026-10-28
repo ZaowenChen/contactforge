@@ -1,0 +1,38 @@
+name: source checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  source-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check Python, JSON and shell syntax
+        run: |
+          python -m compileall -q src scripts tests
+          bash -n scripts/run_local.sh
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for path in Path('.').rglob('*.json'):
+              if '.git' not in path.parts:
+                  json.loads(path.read_text())
+          PY
+      - name: Check frozen V6 implementation provenance
+        run: |
+          python - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+          manifest = json.loads(Path('reference/release_manifest.json').read_text())
+          for name, digest in manifest['preserved_files_sha256'].items():
+              assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == digest, name
+          PY
